@@ -1,0 +1,61 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: "YS Text", sans-serif;
+    background-color: #aeafb0;
+}
+
+/* * root */
+:root {
+    --container-max-width-medium: calc(84.375rem + (var(--container-padding-inline) * 2));
+    --container-padding-inline: 2.5rem;
+    --font-family: "YS Text", sans-serif;
+}
+
+/* * main */
+.main {
+    overflow-x: hidden;
+}
+
+/* * visually-hidden - for h1... */
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: .0625rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* * container */
+
+.container {
+    max-width: var(--container-max-width-medium);
+    padding-inline: var(--container-padding-inline);
+    margin-inline: auto;
+}
+
+/* * cards */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+[draggable] {
+    cursor: move;
+    cursor: grab;
+}
+
+[draggable]:active {
+    cursor: grabbing;
+}
