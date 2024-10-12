@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="styles/new_reset.css">
+    <title>Yandex</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <title>I love Yandex.</title>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <main class="main">
-        <section class="section">
-            <div class="container">
-                <div class="card">
-                    <div class="card__items">
-                        <div class="card__item">
-                            <div draggable="true" data-product="1"><img src="img/1.svg" alt="products"></div>
-                            <div draggable="true" data-product="2"><img src="img/2.svg" alt="products"></div>
-                            <div draggable="true" data-product="3"><img src="img/3.svg" alt="products"></div>
-                        </div>
-                        <script></script>
-                    </div>
-                    <div class="card__cart" id="cart">
-                        <img draggable="false" src="img/cart.svg" alt="cart">
-                        <a id="pay-button" href="https://lavka.yandex.ru" style="display: none;">Оплатить корзину</a>
-                    </div>
-                </div>
+    <div class="container shop">
+        <div class="shop__kiosk">
+            <div class="shop__shelf">
+                <div class="shop__product shop__product--wine"></div>
+                <div class="shop__product shop__product--milk"></div>
+                <div class="shop__product shop__product--jam"></div>
+                <div class="shop__product shop__product--cheese"></div>
             </div>
-        </section>
-    </main>
-    <script src="js/main.js"></script>
+            <div class="shop__shelf">
+                <div class="shop__product shop__product--meat"></div>
+                <div class="shop__product shop__product--chicken"></div>
+                <div class="shop__product shop__product--chips"></div>
+            </div>
+            <div class="shop__shelf shop__shelf--bar">
+                <div class="shop__product shop__product--pineapple"></div>
+                <div class="shop__product shop__product--banana"></div>
+                <div class="shop__product shop__product--apple"></div>
+                <div class="shop__product shop__product--salad"></div>
+            </div>
+        </div>
+        <div class="shop__cart"></div>
+        <!-- shop__button--show надо убрать, включил для доменстрации -->
+        <a href="https://lavka.yandex.ru" class="button shop__button">Оплатить корзину</a>
+    </div>
 </body>
 
 </html>
